@@ -1,15 +1,15 @@
 
-var array = ["queso", "salsa", "oregano", "harina", "levadura", "anchoas", "jamon", "piña", "palmitos", "agua"];
+const array = ["queso", "salsa", "oregano", "harina", "levadura", "anchoas", "jamon", "piña", "palmitos", "agua"];
 console.log (array);
 
 function ingredientesPizza(array) {
     return typeof pizza === `Boolean`;
 }
-console.log(ingredientesPizza(`oregano`));
+console.log(ingredientesPizza(`oregano`))
 
 function parImpar(array) {
-    var par = [];
-    var impar = [];
+    const par = [];
+    const impar = [];
     for (var i = 0; i < array.length; i++) {
         if ((array[i].length%2) == 0) {
             par.push(array[i])
@@ -17,6 +17,7 @@ function parImpar(array) {
             impar.push(array[i])
         }
     }
-    return "los ingredientes pares son " + par; 
+    return [par,impar]; 
 }
+
 console.log (parImpar(array));
